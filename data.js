@@ -302,7 +302,7 @@ const CART = {
         function showProducts( products ){
             PRODUCTS = products;
             //take data.products and display inside <section id="products">
-            let imgPath = 'https://github.com/sidhanth1432/images';
+            let imgPath = 'https://github.com/sidhanth1432/edit';
             let productSection = document.getElementById('products');
             productSection.innerHTML = "";
             products.forEach(product=>{
