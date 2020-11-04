@@ -111,7 +111,7 @@ const CART = {
             }
         };
         
-        let PRODUCTS = [{
+        let RICE = [{
     "id":123,
     "title":"Bell",
     "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
@@ -152,8 +152,7 @@ const CART = {
 let category=[{"id":0,"title":"rice"},{"id":1,"title":"wheat"},{"id":2,"title":"pulse"}];
         document.addEventListener('DOMContentLoaded', ()=>{
                     showNavbar(category);
-            //when the page is ready
-        showProducts(PRODUCTS);
+            
         //get the cart items from localStorage
             CART.init();
             //load the cart items
@@ -171,6 +170,7 @@ category.forEach( item =>{
                 btn.className = 'btn';
                 btn.textContent = item.title;
                 btn.setAttribute('data-id', item.id);
+                btn.addEventListener('click', showMeMyClickedCategory);
                 
                 
                 
@@ -319,7 +319,7 @@ category.forEach( item =>{
         }
         
         function showProducts( products ){
-            PRODUCTS = products;
+           
             //take data.products and display inside <section id="products">
             let imgPath = './';
             let productSection = document.getElementById('products');
@@ -367,3 +367,12 @@ category.forEach( item =>{
             CART.add(id, 1);
             showCart();
         }
+function showMeMyClickedCategory(ev,rice=RICE){
+            ev.preventDefault();
+            let id = parseInt(ev.target.getAttribute('data-id'));
+            if(id===0){
+            showProducts(rice);
+            }
+            showCart();
+        }
+
