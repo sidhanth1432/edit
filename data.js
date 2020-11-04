@@ -115,19 +115,19 @@ const CART = {
     "id":123,
     "title":"Bell",
     "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    "img":"1.jpg",
+    "img":"12.jpg",
     "price":12.34
 },{
     "id":456,
     "title":"Bullhorn",
     "desc":"Quisquam, veritatis, officia. Veritatis, saepe!",
-    "img":"1.jpg",
+    "img":"12.jpg",
     "price":43.21
 },{
     "id":789,
     "title":"Clock",
     "desc":"Fugit dolorum consequatur rem molestiae, possimus dignissimos!",
-    "img":"1.jpg",
+    "img":"12.jpg",
     "price":45.67
 },{
     "id":987,
