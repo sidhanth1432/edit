@@ -360,18 +360,67 @@ category.forEach( item =>{
                 btn.className = 'btn';
                 btn.textContent = 'Add Item';
                 btn.setAttribute('data-id', product.id);
-                btn.addEventListener('click', addItem(products));
+                btn.addEventListener('click', addItem);
                 card.appendChild(btn);
                 //add the card to the section
                 productSection.appendChild(card);
             })
         }
         
-        function addItem(ev,product){
+        function addItem(ev){
+            let WHEAT=[{
+    "id":987,
+    "title":"Cog",
+    "desc":"Fugit dolorum consequatur rem molestiae, possimus dignissimos!",
+    "img":"cog-lg.png",
+    "price":78.90
+},{
+    "id":654, 
+    "title":"Phone",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "img":"iphone-lg.png",
+    "price":76.54
+},{
+    "id":321,
+    "title":"Lightbulb",
+    "desc":"Earum deleniti modi dolore cum, animi minima, saepe placeat, debitis mollitia veniam.",
+    "img":"lightbulb-alt-on-lg.png",
+    "price":23.45
+}];
+
+
+
+
+
+
+let RICE = [{
+    "id":123,
+    "title":"Bell",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "img":"12.jpg",
+    "price":12.34
+},{
+    "id":456,
+    "title":"Bullhorn",
+    "desc":"Quisquam, veritatis, officia. Veritatis, saepe!",
+    "img":"12.jpg",
+    "price":43.21
+},{
+    "id":789,
+    "title":"Clock",
+    "desc":"Fugit dolorum consequatur rem molestiae, possimus dignissimos!",
+    "img":"12.jpg",
+    "price":45.67
+}];
+let product=RICE.concat(WHEAT);
+                    
+         
+                    
             ev.preventDefault();
             let id = parseInt(ev.target.getAttribute('data-id'));
             console.log('add to cart item', id);
-            CART.add(id, 1,product);
+            
+             CART.add(id, 1,product);
             showCart();
         }
 function showMeMyClickedCategory(ev){
