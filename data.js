@@ -136,7 +136,7 @@ const CART = {
     "img":"cog-lg.png",
     "price":78.90
 },{
-    "id":654,
+    "id":654, 
     "title":"Phone",
     "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     "img":"iphone-lg.png",
