@@ -151,6 +151,7 @@ const CART = {
         
 let category=[{"id":0,"title":"rice"},{"id":1,"title":"wheat"},{"id":2,"title":"pulse"}];
         document.addEventListener('DOMContentLoaded', ()=>{
+                    showNavbar();
             //when the page is ready
         showProducts(PRODUCTS);
         //get the cart items from localStorage
