@@ -151,7 +151,7 @@ const CART = {
         
 let category=[{"id":0,"title":"rice"},{"id":1,"title":"wheat"},{"id":2,"title":"pulse"}];
         document.addEventListener('DOMContentLoaded', ()=>{
-                    showNavbar();
+                    showNavbar(category);
             //when the page is ready
         showProducts(PRODUCTS);
         //get the cart items from localStorage
@@ -160,7 +160,7 @@ let category=[{"id":0,"title":"rice"},{"id":1,"title":"wheat"},{"id":2,"title":"
             showCart();
         });
 
-function showNavbar(){
+function showNavbar(category){
             let navSection = document.getElementById('navbar');
             cart.innerHTML = '';
 category.forEach( item =>{
@@ -170,8 +170,8 @@ category.forEach( item =>{
 
             let btn = document.createElement('button');
                 btn.className = 'btn';
-                btn.textContent = category;
-                btn.setAttribute('data-id', category);
+                btn.textContent = category.title;
+                btn.setAttribute('data-id', category.id);
                 
                 card.appendChild(btn);
                 
