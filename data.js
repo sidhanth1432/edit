@@ -421,6 +421,7 @@ let product=RICE.concat(WHEAT);
             console.log('add to cart item', id);
             
              CART.add(id, 1,product);
+                    product=[];
             showCart();
         }
 function showMeMyClickedCategory(ev){
