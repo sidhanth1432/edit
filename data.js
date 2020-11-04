@@ -25,7 +25,7 @@ const CART = {
                 if(match && match[0])
                     return match[0];
             },
-            add(id){
+            add(id,PRODUCTS){
                 //add a new item to the cart
                 //check that it is not in the cart already
                 if(CART.find(id)){
@@ -110,7 +110,7 @@ const CART = {
                 console.log(prefix, CART.contents)
             }
         };
-
+let PRODUCTS=[];
 let WHEAT=[{
     "id":987,
     "title":"Cog",
@@ -360,18 +360,18 @@ category.forEach( item =>{
                 btn.className = 'btn';
                 btn.textContent = 'Add Item';
                 btn.setAttribute('data-id', product.id);
-                btn.addEventListener('click', addItem);
+                btn.addEventListener('click', addItem(products));
                 card.appendChild(btn);
                 //add the card to the section
                 productSection.appendChild(card);
             })
         }
         
-        function addItem(ev){
+        function addItem(product,ev){
             ev.preventDefault();
             let id = parseInt(ev.target.getAttribute('data-id'));
             console.log('add to cart item', id);
-            CART.add(id, 1);
+            CART.add(id, 1,product);
             showCart();
         }
 function showMeMyClickedCategory(ev){
@@ -419,15 +419,19 @@ let RICE = [{
     "img":"12.jpg",
     "price":45.67
 }];
-
+let PRODUCTS=[];
             ev.preventDefault();
             let id = parseInt(ev.target.getAttribute('data-id'));
             console.log(id);
             if(id===0){
-            showProducts(RICE);
+                        PRODUCTS=[];
+                        PRODUCTS=[...RICE];
+            showProducts(PRODUCTS);
             }
             else if(id===1){
-            showProducts(WHEAT);
+                        PRODUCTS=[];
+                         PRODUCTS=[...WHEAT];
+            showProducts(PRODUCTS);
             }
             showCart();
         }
