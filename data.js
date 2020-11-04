@@ -374,7 +374,7 @@ category.forEach( item =>{
             CART.add(id, 1);
             showCart();
         }
-function showMeMyClickedCategory(ev,rice=RICE,wheat=WHEAT){
+function showMeMyClickedCategory(ev){
             ev.preventDefault();
             let id = parseInt(ev.target.getAttribute('data-id'));
             console.log(id);
