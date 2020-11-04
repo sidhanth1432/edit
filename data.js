@@ -165,15 +165,14 @@ function showNavbar(category){
             cart.innerHTML = '';
 category.forEach( item =>{
              
-            let card = document.createElement('div');
-                card.className = 'card';
+            
 
             let btn = document.createElement('button');
                 btn.className = 'btn';
                 btn.textContent = category.title;
                 btn.setAttribute('data-id', category.id);
                 
-                card.appendChild(btn);
+                
                 
                 navSection.appendChild(card);
             })        
