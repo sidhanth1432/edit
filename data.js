@@ -174,7 +174,7 @@ category.forEach( item =>{
                 
                 
                 
-                navSection.appendChild(card);
+                navSection.appendChild(btn);
             })        
 }
 
