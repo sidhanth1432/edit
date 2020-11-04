@@ -169,8 +169,8 @@ category.forEach( item =>{
 
             let btn = document.createElement('button');
                 btn.className = 'btn';
-                btn.textContent = category.title;
-                btn.setAttribute('data-id', category.id);
+                btn.textContent = item.title;
+                btn.setAttribute('data-id', item.id);
                 
                 
                 
