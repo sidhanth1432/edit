@@ -367,7 +367,7 @@ category.forEach( item =>{
             })
         }
         
-        function addItem(product,ev){
+        function addItem(ev,product){
             ev.preventDefault();
             let id = parseInt(ev.target.getAttribute('data-id'));
             console.log('add to cart item', id);
