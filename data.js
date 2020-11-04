@@ -149,6 +149,7 @@ const CART = {
     "price":23.45
 }];
         
+let category=[{"id":0,"title":"rice"},{"id":1,"title":"wheat"},{"id":2,"title":"pulse"}];
         document.addEventListener('DOMContentLoaded', ()=>{
             //when the page is ready
         showProducts(PRODUCTS);
@@ -157,7 +158,25 @@ const CART = {
             //load the cart items
             showCart();
         });
-        
+
+function showNavbar(){
+            let navSection = document.getElementById('navbar');
+            cart.innerHTML = '';
+category.forEach( item =>{
+             
+            let card = document.createElement('div');
+                card.className = 'card';
+
+            let btn = document.createElement('button');
+                btn.className = 'btn';
+                btn.textContent = category;
+                btn.setAttribute('data-id', category);
+                
+                card.appendChild(btn);
+                
+                navSection.appendChild(card);
+            })        
+}
 
 
 
