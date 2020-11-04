@@ -154,24 +154,6 @@ let RICE = [{
     "desc":"Fugit dolorum consequatur rem molestiae, possimus dignissimos!",
     "img":"12.jpg",
     "price":45.67
-},{
-    "id":987,
-    "title":"Cog",
-    "desc":"Fugit dolorum consequatur rem molestiae, possimus dignissimos!",
-    "img":"cog-lg.png",
-    "price":78.90
-},{
-    "id":654, 
-    "title":"Phone",
-    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    "img":"iphone-lg.png",
-    "price":76.54
-},{
-    "id":321,
-    "title":"Lightbulb",
-    "desc":"Earum deleniti modi dolore cum, animi minima, saepe placeat, debitis mollitia veniam.",
-    "img":"lightbulb-alt-on-lg.png",
-    "price":23.45
 }];
         
 let category=[{"id":0,"title":"rice"},{"id":1,"title":"wheat"},{"id":2,"title":"pulse"}];
@@ -395,6 +377,7 @@ category.forEach( item =>{
 function showMeMyClickedCategory(ev,rice=RICE,wheat=WHEAT){
             ev.preventDefault();
             let id = parseInt(ev.target.getAttribute('data-id'));
+            console.log(id);
             if(id===0){
             showProducts(rice);
             }
