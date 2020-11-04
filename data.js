@@ -26,6 +26,44 @@ const CART = {
                     return match[0];
             },
             add(id){
+    let PRODUCTS=[{
+    "id":987,
+    "title":"Cog",
+    "desc":"Fugit dolorum consequatur rem molestiae, possimus dignissimos!",
+    "img":"cog-lg.png",
+    "price":78.90
+},{
+    "id":654, 
+    "title":"Phone",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "img":"iphone-lg.png",
+    "price":76.54
+},{
+    "id":321,
+    "title":"Lightbulb",
+    "desc":"Earum deleniti modi dolore cum, animi minima, saepe placeat, debitis mollitia veniam.",
+    "img":"lightbulb-alt-on-lg.png",
+    "price":23.45
+},{
+    "id":123,
+    "title":"Bell",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "img":"12.jpg",
+    "price":12.34
+},{
+    "id":456,
+    "title":"Bullhorn",
+    "desc":"Quisquam, veritatis, officia. Veritatis, saepe!",
+    "img":"12.jpg",
+    "price":43.21
+},{
+    "id":789,
+    "title":"Clock",
+    "desc":"Fugit dolorum consequatur rem molestiae, possimus dignissimos!",
+    "img":"12.jpg",
+    "price":45.67
+}];
+
                 //add a new item to the cart
                 //check that it is not in the cart already
                 if(CART.find(id)){
@@ -110,43 +148,6 @@ const CART = {
                 console.log(prefix, CART.contents)
             }
         };
-let PRODUCTS=[{
-    "id":987,
-    "title":"Cog",
-    "desc":"Fugit dolorum consequatur rem molestiae, possimus dignissimos!",
-    "img":"cog-lg.png",
-    "price":78.90
-},{
-    "id":654, 
-    "title":"Phone",
-    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    "img":"iphone-lg.png",
-    "price":76.54
-},{
-    "id":321,
-    "title":"Lightbulb",
-    "desc":"Earum deleniti modi dolore cum, animi minima, saepe placeat, debitis mollitia veniam.",
-    "img":"lightbulb-alt-on-lg.png",
-    "price":23.45
-},{
-    "id":123,
-    "title":"Bell",
-    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    "img":"12.jpg",
-    "price":12.34
-},{
-    "id":456,
-    "title":"Bullhorn",
-    "desc":"Quisquam, veritatis, officia. Veritatis, saepe!",
-    "img":"12.jpg",
-    "price":43.21
-},{
-    "id":789,
-    "title":"Clock",
-    "desc":"Fugit dolorum consequatur rem molestiae, possimus dignissimos!",
-    "img":"12.jpg",
-    "price":45.67
-}];
 let WHEAT=[{
     "id":987,
     "title":"Cog",
