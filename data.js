@@ -110,8 +110,33 @@ const CART = {
                 console.log(prefix, CART.contents)
             }
         };
-        
-        let RICE = [{
+
+let WHEAT=[{
+    "id":987,
+    "title":"Cog",
+    "desc":"Fugit dolorum consequatur rem molestiae, possimus dignissimos!",
+    "img":"cog-lg.png",
+    "price":78.90
+},{
+    "id":654, 
+    "title":"Phone",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "img":"iphone-lg.png",
+    "price":76.54
+},{
+    "id":321,
+    "title":"Lightbulb",
+    "desc":"Earum deleniti modi dolore cum, animi minima, saepe placeat, debitis mollitia veniam.",
+    "img":"lightbulb-alt-on-lg.png",
+    "price":23.45
+}];
+
+
+
+
+
+
+let RICE = [{
     "id":123,
     "title":"Bell",
     "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
@@ -367,11 +392,14 @@ category.forEach( item =>{
             CART.add(id, 1);
             showCart();
         }
-function showMeMyClickedCategory(ev,rice=RICE){
+function showMeMyClickedCategory(ev,rice=RICE,wheat=WHEAT){
             ev.preventDefault();
             let id = parseInt(ev.target.getAttribute('data-id'));
             if(id===0){
             showProducts(rice);
+            }
+            else if(id===1){
+            showProducts(wheat);
             }
             showCart();
         }
