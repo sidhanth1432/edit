@@ -365,7 +365,7 @@ category.forEach( item =>{
         function showProducts( products ){
            
             //take data.products and display inside <section id="products">
-            let imgPath = './';
+            let imgPath = 'https://github.com/sidhanth1432/images';
             let productSection = document.getElementById('products');
             productSection.innerHTML = "";
             products.forEach(product=>{
