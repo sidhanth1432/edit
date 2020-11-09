@@ -412,13 +412,25 @@ category.forEach( item =>{
                     
                     let card30 = document.createElement('div');
                 card30.className = 'card';
-                //add the image to the card
-                let vid = document.createElement('VIDEO');
                 
-                vid.src ="https://www.youtube.com/embed/xhqANOnnNgU";
-                card30.appendChild(vid);
                     
-                    card3.appendChild(card30);
+                    var x = document.createElement("VIDEO");
+
+  if (x.canPlayType("video/mp4")) {
+    x.setAttribute("src","https://www.youtube.com/embed/xhqANOnnNgU");
+  } else {
+    x.setAttribute("src","https://www.youtube.com/embed/xhqANOnnNgU");
+  }
+
+  x.setAttribute("width", "320");
+  x.setAttribute("height", "240");
+  x.setAttribute("controls", "controls");
+  
+                    card30.appendChild(x);
+ card3.appendChild(card30);
+                    
+                    
+                    
                     
                     
                      
