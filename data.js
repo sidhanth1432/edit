@@ -373,6 +373,19 @@ category.forEach( item =>{
                 desc.textContent = 'Smart Shipment is an imperative resource for searching, purchasing and shipping grocery items to your home';
                 card.appendChild(desc);
               aboutUsSection.appendChild(card);   
+         let card = document.createElement('div');
+                    let title = document.createElement('h3');
+                title.textContent = 'The Smart Shipment Philosophy';
+                card.appendChild(title);
+                let desc = document.createElement('p');
+                desc.textContent = 'we value our customers time.we have always witnessed the burden of shipping goods through its people shopping from the local store.';
+                card.appendChild(desc);
+              aboutUsSection.appendChild(card);
+        
+        
+        
+        
+        
         }
 
 
