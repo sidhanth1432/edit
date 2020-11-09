@@ -397,10 +397,17 @@ category.forEach( item =>{
                 desc31.textContent = 'Labour Charge:50';
                 card3.appendChild(desc31);
                     let desc32= document.createElement('p');
-                desc32.textContent = 'Petrol Charges:approximate cost to travel the distance(2*(distance between customers home and Dmart store))';
+                desc32.textContent = 'Fuel Charges:approximate cost to travel the distance=(2*(distance between customers home and Dmart store))';
                 card3.appendChild(desc32);
+                    
+                    let desc32= document.createElement('p');
+                desc32.textContent = 'consumers profit by doing business with us.It saves your time.package is delivered within or maximum 2hours.even if you dont take this option of home delivery and come down to the store and buy the products from Dmart directly it would cost you the same fuel charges';
+                card3.appendChild(desc32);
+                    
+                    
+                    
                     let desc33= document.createElement('p');
-                desc33.textContent = 'total amount payable:Bill Amount+Labour Charges+Petrol Charges';
+                desc33.textContent = 'total amount payable:Bill Amount+Labour Charges+Fuel Charges';
                 card3.appendChild(desc33);
                      
                     let title34= document.createElement('h3');
@@ -459,11 +466,11 @@ category.forEach( item =>{
                 card3.appendChild(desc307);
                     
                      let desc308= document.createElement('p');
-                desc308.textContent = 'Refund charges=Petrol Charges';
+                desc308.textContent = 'Refund charges=Fuel Charges';
                 card3.appendChild(desc308);
                     
                     let desc309= document.createElement('p');
-                desc309.textContent = 'Business arent usually done like this. its usually done by keeping a high margin  with the seller and which is paid by the consumer example:jiomart increase the products cost by the delicery charges and declare we provide free home delivery.we charge for only what consumers use.';
+                desc309.textContent ='we charge for only what consumers use.';
                 card3.appendChild(desc309);
              
                  aboutUsSection.appendChild(card3); 
