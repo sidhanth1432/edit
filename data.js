@@ -400,9 +400,9 @@ category.forEach( item =>{
                 desc32.textContent = 'Fuel Charges:approximate cost to travel the distance=(2*(distance between customers home and Dmart store))';
                 card3.appendChild(desc32);
                     
-                    let desc32= document.createElement('p');
-                desc32.textContent = 'consumers profit by doing business with us.It saves your time.package is delivered within or maximum 2hours.even if you dont take this option of home delivery and come down to the store and buy the products from Dmart directly it would cost you the same fuel charges';
-                card3.appendChild(desc32);
+                    let desc3211= document.createElement('p');
+                desc3211.textContent = 'consumers profit by doing business with us.It saves your time.package is delivered within or maximum 2hours.even if you dont take this option of home delivery and come down to the store and buy the products from Dmart directly it would cost you the same fuel charges';
+                card3.appendChild(desc3211);
                     
                     
                     
