@@ -212,7 +212,7 @@ category.forEach( item =>{
             
 
             let btn = document.createElement('button');
-                btn.className = 'btn';
+                btn.className = 'category';
                 btn.textContent = item.title;
                 btn.setAttribute('data-id', item.id);
                 btn.addEventListener('click', showMeMyClickedCategory);
