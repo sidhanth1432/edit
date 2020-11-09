@@ -411,7 +411,7 @@ category.forEach( item =>{
                 card3.appendChild(desc33);
                     
                     
- card3.appendChild(card30);
+ 
                     
                    
   var x = document.createElement("OBJECT");
