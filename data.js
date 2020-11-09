@@ -361,6 +361,30 @@ category.forEach( item =>{
             }
             showCart();
         }
+        function aboutUs( products ){
+            let aboutUsSection = document.getElementById('products');
+            aboutUsSection.innerHTML = "";
+  let card = document.createElement('dishipping grocery items to your home
+                let title = document.createElement('h3');
+                title.textContent = 'About us';
+                card.appendChild(title);
+                let desc = document.createElement('p');
+                desc.textContent = 'Smart Shipment is an imperative resource for searching, purchasing and shipping grocery items to your home';
+                card.appendChild(desc);
+              aboutUsSection.appendChild(card);   
+        }
+
+
+
+
+
+
+
+
+
+
+
+
         
         function showProducts( products ){
            
