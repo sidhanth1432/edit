@@ -409,6 +409,18 @@ category.forEach( item =>{
                     let desc33= document.createElement('p');
                 desc33.textContent = 'total amount payable:Bill Amount+Labour Charges+Fuel Charges';
                 card3.appendChild(desc33);
+                    
+                    let card30 = document.createElement('div');
+                card30.className = 'card';
+                //add the image to the card
+                let vid = document.createElement('VIDEO');
+                
+                vid.src ="https://www.youtube.com/embed/xhqANOnnNgU";
+                card30.appendChild(vid);
+                    
+                    card3.appendChild(card30);
+                    
+                    
                      
                     let title34= document.createElement('h3');
                 title34.textContent = 'terms and conditions';
