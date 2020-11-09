@@ -201,6 +201,7 @@ let category=[{"id":0,"title":"rice"},{"id":1,"title":"wheat"},{"id":2,"title":"
             CART.init();
             //load the cart items
             showCart();
+                    aboutUs();
         });
 
 function showNavbar(category){
@@ -361,11 +362,11 @@ category.forEach( item =>{
             }
             showCart();
         }
-        function aboutUs( products ){
-            let aboutUsSection = document.getElementById('products');
+        function aboutUs(){
+            let aboutUsSection = document.getElementById('aboutus');
             aboutUsSection.innerHTML = "";
-  let card = document.createElement('dishipping grocery items to your home
-                let title = document.createElement('h3');
+  let card = document.createElement('div');
+                    let title = document.createElement('h3');
                 title.textContent = 'About us';
                 card.appendChild(title);
                 let desc = document.createElement('p');
