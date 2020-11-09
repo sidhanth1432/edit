@@ -405,7 +405,7 @@ category.forEach( item =>{
                 card3.appendChild(desc3211);
                     
                     
-                    
+                     
                     let desc33= document.createElement('p');
                 desc33.textContent = 'total amount payable:Bill Amount+Labour Charges+Fuel Charges';
                 card3.appendChild(desc33);
