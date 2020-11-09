@@ -373,21 +373,22 @@ category.forEach( item =>{
                 desc.textContent = 'Smart Shipment is an imperative resource for searching, purchasing and shipping grocery items to your home';
                 card.appendChild(desc);
               aboutUsSection.appendChild(card);   
-         card = document.createElement('div');
-                    title = document.createElement('h3');
-                title.textContent = 'The Smart Shipment Philosophy';
-                card.appendChild(title);
-                desc = document.createElement('p');
-                desc.textContent = 'we value our customers time.we have always witnessed the burden of shipping goods through its people shopping from the local store.';
-                card.appendChild(desc);
-              aboutUsSection.appendChild(card);
-                title = document.createElement('h3');
-                title.textContent = 'What Smart Shipment Offers';
-                card.appendChild(title);
-                desc = document.createElement('p');
-                desc.textContent = 'With India emerging as a leading market for an ever-increasing range of products.Smart Shipment offers an immense advantage with its vast products,delivering them to your doorstep in the minimum time. From the broadest range of categories - you will find it all here!';
-                card.appendChild(desc);
-              aboutUsSection.appendChild(card);      
+        let card1 = document.createElement('div');
+                    let title1 = document.createElement('h3');
+                title1.textContent = 'The Smart Shipment Philosophy';
+                card1.appendChild(title);
+                let desc1 = document.createElement('p');
+                desc1.textContent = 'we value our customers time.we have always witnessed the burden of shipping goods through its people shopping from the local store.';
+                card1.appendChild(desc1);
+              aboutUsSection.appendChild(card1);
+                let card2 = document.createElement('div');
+               let title2 = document.createElement('h3');
+                title2.textContent = 'What Smart Shipment Offers';
+                card2.appendChild(title);
+                let desc2 = document.createElement('p');
+                desc2.textContent = 'With India emerging as a leading market for an ever-increasing range of products.Smart Shipment offers an immense advantage with its vast products,delivering them to your doorstep in the minimum time. From the broadest range of categories - you will find it all here!';
+                card2.appendChild(desc2);
+              aboutUsSection.appendChild(card2);      
                     
                     
                     
