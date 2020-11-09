@@ -376,7 +376,7 @@ category.forEach( item =>{
         let card1 = document.createElement('div');
                     let title1 = document.createElement('h3');
                 title1.textContent = 'The Smart Shipment Philosophy';
-                card1.appendChild(title);
+                card1.appendChild(title1);
                 let desc1 = document.createElement('p');
                 desc1.textContent = 'we value our customers time.we have always witnessed the burden of shipping goods through its people shopping from the local store.';
                 card1.appendChild(desc1);
@@ -384,12 +384,89 @@ category.forEach( item =>{
                 let card2 = document.createElement('div');
                let title2 = document.createElement('h3');
                 title2.textContent = 'What Smart Shipment Offers';
-                card2.appendChild(title);
+                card2.appendChild(title2);
                 let desc2 = document.createElement('p');
                 desc2.textContent = 'With India emerging as a leading market for an ever-increasing range of products.Smart Shipment offers an immense advantage with its vast products,delivering them to your doorstep in the minimum time. From the broadest range of categories - you will find it all here!';
                 card2.appendChild(desc2);
               aboutUsSection.appendChild(card2);      
+                     let card3= document.createElement('div');
+               let title30= document.createElement('h3');
+                title30.textContent = 'Pricing';
+                card3.appendChild(title30);
+                let desc31 = document.createElement('p');
+                desc31.textContent = 'Labour Charge:50';
+                card3.appendChild(desc31);
+                    let desc32= document.createElement('p');
+                desc32.textContent = 'Petrol Charges:approximate cost to travel the distance(2*(distance between customers home and Dmart store))';
+                card3.appendChild(desc32);
+                    let desc33= document.createElement('p');
+                desc33.textContent = 'total amount payable:Bill Amount+Labour Charges+Petrol Charges';
+                card3.appendChild(desc33);
+                     
+                    let title34= document.createElement('h3');
+                title34.textContent = 'terms and conditions';
+                card3.appendChild(title34);
+                    let desc35= document.createElement('p');
+                desc35.textContent = 'Advance amount:50% of the total amount payable must be paid via electronic fund tranfer or netbanking. and the remaining amount must be payed after the package is delivered.';
+                card3.appendChild(desc35);
                     
+                    let desc36= document.createElement('p');
+                desc36.textContent = 'Return and Refund Policy';
+                card3.appendChild(desc36);
+                     let desc37= document.createElement('p');
+                desc37.textContent = 'Products purchased from our site can be returned for a refund within 7 days from the date of the invoice provided:';
+                card3.appendChild(desc37);
+                    let desc38= document.createElement('p');
+                desc38.textContent = 'The product has not been used and has not been altered in any manner';
+                card3.appendChild(desc38);
+                    
+                    let desc39= document.createElement('p');
+                desc39.textContent = 'The product is intact and in saleable condition, and';
+                card3.appendChild(desc39);
+                    
+                    
+                    let desc301= document.createElement('p');
+                desc301.textContent = 'The product is accompanied by the original invoice of purchase.';
+                card3.appendChild(desc301);
+                    
+                    
+                    let desc302= document.createElement('p');
+                desc302.textContent = 'The following types of products - once accepted by customers cannot be returned:';
+                card3.appendChild(desc302);
+                    let desc303= document.createElement('p');
+                desc303.textContent = 'Refrigerated items such as Butter, Cheese, Dahi, etc';
+                card3.appendChild(desc303);
+                    
+                    
+                    let desc304= document.createElement('p');
+                desc304.textContent = 'Seasonal and Festive items such as Decoration lights, Gift Packs, etc.';
+                card3.appendChild(desc304);
+                    
+                    
+                    let desc305= document.createElement('p');
+                desc305.textContent = 'Personal utility items like cosmetics';
+                card3.appendChild(desc305);
+                    
+                    
+                    let desc306= document.createElement('p');
+                desc306.textContent = 'The product is accompanied by the original invoice of purchase.';
+                card3.appendChild(desc306);
+                    
+                    
+                    
+                    let desc307= document.createElement('p');
+                desc307.textContent = 'Products can only be returned for a refund. We don’t provide an exchange of products.';
+                card3.appendChild(desc307);
+                    
+                     let desc308= document.createElement('p');
+                desc308.textContent = 'Refund charges=Petrol Charges';
+                card3.appendChild(desc308);
+                    
+                    let desc309= document.createElement('p');
+                desc309.textContent = 'Business arent usually done like this. its usually done by keeping a high margin  with the seller and which is paid by the consumer example:jiomart increase the products cost by the delicery charges and declare we provide free home delivery.we charge for only what consumers use.';
+                card3.appendChild(desc309);
+             
+                 aboutUsSection.appendChild(card3); 
                     
                     
                     
